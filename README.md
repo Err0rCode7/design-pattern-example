@@ -1,6 +1,9 @@
 # Design-pattern-example
 
+블로그에서 정리했던 내용은 생략 (아래 링크 참고)
 
+- [https://err0rcode7.github.io/spring/2021/05/03/Spring-DesignPattern-1.html](https://err0rcode7.github.io/spring/2021/05/03/Spring-DesignPattern-1.html)
+- [https://err0rcode7.github.io/spring/2021/05/03/Spring-DesignPattern-2.html](https://err0rcode7.github.io/spring/2021/05/03/Spring-DesignPattern-2.html)
 
 ## 생성
 
