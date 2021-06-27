@@ -70,13 +70,21 @@
 
 말 그대로 어떤 일을 대신 시키는 디자인 패턴. 구체적으로 인터페이스를 사용하고 실행시킬 클래스에 대한 객체가 들어갈 자리에 대리자 객체를 대신 투입해 클라이언트 쪽에서 실제 실행시킬 클래스에게서 메서드를 호출하고 반환받는지, 대리자 객체를 통해 메서드를 호출하고 반환받는지 전혀 모르게 처리하는 것
 
+<p align="center">
+<img src="https://user-images.githubusercontent.com/48249549/123536803-5b66d000-d767-11eb-8a1c-549cde621502.png">
+<p style="font-weight:bold" align="center"></p>
+</p>
+
 ### Composite
 
+OOP에서 Composite는 하나 이상의 유사한 객체를 구성(필드와 메소드)으로 설계된 객체로 모두 유사한 기능을 나타낸다. 따라서 객체 그룹을 단일 객체로 조작할 수 있다.
 
+Composite Pattern은 클라이언트가 복합 객체나 단일 객체를 동일하게 취급하는 것을 목적으로 한다. Composite Pattern의 의도는 트리 구조로 작성하며 전체-부분 관계를 표현한다. 따라서 Directory-file 같은 관계와 전체-부분 관계를 트리 구조로 표현하고 싶을 때 유리하다.
 
-### Adapter
-
-
+<p align="center">
+<img src="https://user-images.githubusercontent.com/48249549/123537369-024c6b80-d76a-11eb-9a3b-7879195c2445.png">
+<p style="font-weight:bold" align="center"></p>
+</p>
 
 ## 행위
 
