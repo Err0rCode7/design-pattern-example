@@ -111,7 +111,14 @@ SQL과 같은 계층적 언어를 해석하기 위해 계층 구조를 표현할
 
 ### Template Method
 
+알고리즘의 구조를 메소드에 정의하고, 하위 클래스에서 알고리즘 구조의 변경없이 알고리즘을 재정의 하는 패턴
 
+알고리즘이 단계별로 나누어 지거나, 같은 역할을 하는 메소드이지 여러곳에서 다른형태로 사용이 필요한 경우 유용한 패턴이다.
+
+<p align="center">
+<img src="https://user-images.githubusercontent.com/48249549/123593242-405c9480-d829-11eb-95f9-e70dc9f4e5cd.png">
+<p style="font-weight:bold" align="center">Template Method</p>
+</p>
 
 ### Chain of Responsibility
 
