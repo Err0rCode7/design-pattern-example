@@ -131,6 +131,13 @@ SQL과 같은 계층적 언어를 해석하기 위해 계층 구조를 표현할
 
 ### Command
 
+요청을 객체의 형태로 캡슐화하여 사용자가 보낸 요청을 나중에 이요할 수 있도록 메서드 이름, 매개변수 등 요청에 필요한 정보를 저장 또는 로깅, 취소할 수 있게 하는 패턴
+
+<p align="center">
+<img src="https://user-images.githubusercontent.com/48249549/123822553-5c4e5c00-d937-11eb-94d0-e95f4fc32981.png">
+<p style="font-weight:bold" align="center">Command</p>
+</p>
+
 ### Iterator
 
 ### Mediator
