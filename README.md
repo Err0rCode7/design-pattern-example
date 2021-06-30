@@ -154,6 +154,13 @@ for문의 i++ 과 같은 문법으로 탐색을 하는 방식이 아니라 i의 
 
 ### Mediator
 
+클래스 간의 상호작용을 하나의 클래스에 위임하여 처리하는 패턴. 따라서 M:N의 관계에서 M:1 관계로 복잡도를 떨어뜨려 유지보수 및 확장성에 유리하다. 다른 객체의 존재를 모르는 상태에서도 메시지를 주고 받을 수 있다.
+
+<p align="center">
+<img src="https://user-images.githubusercontent.com/48249549/123926820-3e303c80-d9c7-11eb-85b5-4497135d3adb.png">
+<p style="font-weight:bold" align="center">Mediator</p>
+</p>
+
 ### Memento
 
 ### Observer
