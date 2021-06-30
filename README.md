@@ -145,6 +145,13 @@ SQL과 같은 계층적 언어를 해석하기 위해 계층 구조를 표현할
 
 ### Iterator
 
+for문의 i++ 과 같은 문법으로 탐색을 하는 방식이 아니라 i의 기능을 일반화한 디자인 패턴
+
+<p align="center">
+<img src="https://user-images.githubusercontent.com/48249549/123891385-ce548e80-d993-11eb-921c-5015a1737400.png">
+<p style="font-weight:bold" align="center">Iterator</p>
+</p>
+
 ### Mediator
 
 ### Memento
