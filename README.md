@@ -163,6 +163,13 @@ for문의 i++ 과 같은 문법으로 탐색을 하는 방식이 아니라 i의 
 
 ### Memento
 
+객체의 상태 정보를 저장하고 객체를 이전 상태로 되돌릴 수 있는 기능을 제공하는 패턴. `orginator`, `caretaker`, `memento`를 구성하고 `orginator`는 `Memento` 객체를 생성해서, `originator`의 snapshot을 저장한다. `memento`는 `originator의` state를 저장한다. `memento`의 state는 외부에 노출시키지 않으며, `originator`에 의해서 읽고 쓸 수 있다. 즉, `memento`는 `originator`의 inner class로 구현된다. `caretaker`에 의해서 `memento`가 생성되고 저장되거나 복원된다.
+
+<p align="center">
+<img src="https://user-images.githubusercontent.com/48249549/123930905-1e027c80-d9cb-11eb-83c7-e11781cdafd7.png">
+<p style="font-weight:bold" align="center">Memento</p>
+</p>
+
 ### Observer
 
 ### State
