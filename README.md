@@ -199,6 +199,15 @@ for문의 i++ 과 같은 문법으로 탐색을 하는 방식이 아니라 i의 
 
 ### State
 
+객체가 특정 상태에 따라 행위를 달리하는 상황에서, 자신이 직접 상태를 체크하여 상태에 따라 행위를 호출하지 않고 상태를 객체화하여 상태가 행동을 할 수 있도록 위임하는 패턴.
+
+If 또는 Switch를 이용해서 상태를 체크하고 바꾸는 것이 아닌 상태 객체를 만들어서 다음 상태로 업데이트 해주어 상태 객체의 상호작용으로 객체의 상태를 표현하게 된다.
+
+<p align="center">
+<img src="https://user-images.githubusercontent.com/48249549/124065377-a5a2c680-da71-11eb-8135-8024e198ba01.png">
+<p style="font-weight:bold" align="center">State</p>
+</p>
+
 ### Visitor
 
 
