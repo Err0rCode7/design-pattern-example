@@ -172,6 +172,31 @@ for문의 i++ 과 같은 문법으로 탐색을 하는 방식이 아니라 i의 
 
 ### Observer
 
+객체의 상태 변화를 관찰하는 관찰자들, 즉 옵저버들의 목록을 객체에 등록하여 상태 변화가 있을 때마다 메서드 등을 통해 객체가 직접 목록의 각 옵저버에게 통지하도록 하는 디자인 패턴. 주로 분산 이벤트 핸들링 시스템을 구현하는 데 사용 된다. 발행/구독 모델로 알려져 있기도 하다.
+
+<p align="center">
+<img src="https://user-images.githubusercontent.com/48249549/124062729-35457680-da6c-11eb-993d-089831930dfa.png">
+<p style="font-weight:bold" align="center">Observer</p>
+</p>
+
+자바에서 `Observable, Observer` 인터페이스가 자바 9 이후로 Deprecated 되었다. 이유는 아래와 같다.
+
+**[Not Serializable](https://bugs.openjdk.java.net/browse/JDK-4180466)** - Since, Observable doesn't implements Serializable. So, you can't Serialize Observable neither its subclass.
+
+**[No Thread Safety](https://bugs.openjdk.java.net/browse/JDK-8025077)** - The methods can be overridden by its subclasses, and event notification can occur in different orders and possibly on different threads, which is enough to disrupt any "thread safety".
+
+**[Less to offer](https://bugs.openjdk.java.net/browse/JDK-8154801)** -
+
+> They don't provide a rich enough event model for applications. For example, they support only the notion that something has changed, but they don't convey any information about what has changed
+
+즉, Observable에는 직렬화를 할 수 있는 인터페이스가 구현되어있지 않고 멀티 쓰레드 환경에서 안전하지 않았다.
+
+이에 대한 대안책으로 `PropertyChangeListener`가 있다. 즉, `Listener`을 이용해서 Observer를 대체한다.
+
+[https://stackoverflow.com/questions/46380073/observer-is-deprecated-in-java-9-what-should-we-use-instead-of-it](https://stackoverflow.com/questions/46380073/observer-is-deprecated-in-java-9-what-should-we-use-instead-of-it)
+
+[https://www.baeldung.com/java-observer-pattern](https://www.baeldung.com/java-observer-pattern)
+
 ### State
 
 ### Visitor
