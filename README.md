@@ -210,5 +210,19 @@ If 또는 Switch를 이용해서 상태를 체크하고 바꾸는 것이 아닌 
 
 ### Visitor
 
+알고리즘을 객체 구조에서 분리시키는 디자인 패턴.
+
+Object 내부에 Operation들로 인해 `Cohesion`(응집도)이 떨어질 때 사용한다.
+
+- Usage
+    - Object 구조에 Object 속성과 관계없는 Operation이 많이 수행되어야 할 때.
+    - Object 구조에 변하지 않지만 Operation들이 많이 변경될 때
+    - 같은 인터페이스를 구현하는 다수의 Object에 대해 연산을 수행해야하는 Operation이 필요할 때
+    - 해당 Operation들이 Abstarct class 수준이 아닌 concrete class 수준에서 수행되어야 할 때. 즉 구현체마다 operation이 다르게 동작할 때.
+
+<p align="center">
+<img src="https://user-images.githubusercontent.com/48249549/124068777-16e47880-da76-11eb-8a6c-62364f05551c.png">
+<p style="font-weight:bold" align="center">Visitor</p>
+</p>
 
 
